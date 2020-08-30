@@ -1,0 +1,21 @@
+{
+  "name": "yatjs",
+  "version": "1.0.0",
+  "description": "Yet Another Transform for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^13.13.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
