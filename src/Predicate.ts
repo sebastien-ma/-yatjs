@@ -1,5 +1,5 @@
 import { Node } from './Node';
 
-export interface Filter {
+export interface Predicate {
   (val: any, key: string | number | null, node: Node): boolean;
 }
