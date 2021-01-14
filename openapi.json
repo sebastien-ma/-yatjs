@@ -1,1 +1,42 @@
-{}
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HTTP Bin",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://slc11jrp.us.oracle.com:19840/bin"
+    }
+  ],
+  "paths": {
+    "/test": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "A sample description of the Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "foo": {
+                      "type": "string",
+                      "format": "binary"
+                    },
+                    "bar": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
